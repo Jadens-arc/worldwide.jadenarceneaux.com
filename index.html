@@ -20,7 +20,7 @@
                 </h1>
             </div> 
             <div class="text-center mb-5">
-                <a class="btn btn-outline-light"><span class="h1">RSVP</span></a>
+                <a class="btn btn-outline-light" href="#rsvp"><span class="h1">RSVP</span></a>
             </div>
             
             <img src="/assets/face.png" class="mx-auto d-block w-100 face" alt="Project Jaden Worldwide Logo">
@@ -35,25 +35,25 @@
             <h2 class="text-light text-center">
                 <span class="fit-text">Join us on</span> 
                 <span class="fit-text">November 1st</span>
+                <span class="fit-text">At the Conrad Hotel</span>
             </h2>
             
-            <h2 class="text-light mt-5">
+            <h2 class="text-light mt-5" id="rsvp">
                 <span class="fit-text">RSVP</span>
             </h2>
-            <form>
-                <div class="mb-3">
+            <form id="rsvp-form">
+                <div class="mb-3 mb-5">
                     <label for="name" class="form-label text-light fit-text">Please enter your name.........</label>
-                    <input type="text" class="form-control " id="name" placeholder="E.g. Malaya Jenkins">
-                </div>
+                    <input type="text" class="form-control fs-2" id="name" placeholder="E.g. Malaya Jenkins">
+                </kdiv>
                 
-                <div class="form-check form-switch d-flex flex-column p-0">
+                <div class="form-check form-switch d-flex flex-column p-0 my-5">
                     <label class="form-check-label text-light fit-text" for="isComing">Are you coming to the party?</label>
                     <input class="form-check-input m-0 fit-text" type="checkbox" role="switch" id="isComing">
                 </div>
                 
-                <button type="submit" class="btn btn-primary ">Submit</button>
+                <button type="submit" class="btn btn-outline-info fit-text rounded-pill p-5 my-5">Submit</button>
             </form>
-            
         </div>
     </section>
     <!-- Bootstrap JS Bundle with Popper -->

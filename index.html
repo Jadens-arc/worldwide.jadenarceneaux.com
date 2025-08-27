@@ -41,15 +41,20 @@
             <h2 class="text-light mt-5" id="rsvp">
                 <span class="fit-text">RSVP</span>
             </h2>
-            <form id="rsvp-form">
+            <form id="rsvp-form" method="POST" action="https://formspree.io/f/mqadknlw">
                 <div class="mb-3 mb-5">
                     <label for="name" class="form-label text-light fit-text">Please enter your name.........</label>
-                    <input type="text" class="form-control fs-2" id="name" placeholder="E.g. Malaya Jenkins">
-                </kdiv>
+                    <input type="text" class="form-control fs-2" name="name" id="name" placeholder="E.g. Malaya Jenkins" required>
+                </div>
                 
-                <div class="form-check form-switch d-flex flex-column p-0 my-5">
-                    <label class="form-check-label text-light fit-text" for="isComing">Are you coming to the party?</label>
-                    <input class="form-check-input m-0 fit-text" type="checkbox" role="switch" id="isComing">
+                <div class="mb-3 mb-5">
+                    <label for="phoneNumber" class="form-label text-light fit-text">Enter your phone number to recieve updates</label>
+                    <input type="text" class="form-control fs-2" name="phoneNumber" id="phoneNumber" placeholder="E.g 702-600-4785" required>
+                </div>
+                
+                <div class="mb-3 mb-5">
+                    <label for="numberOfGuests" class="form-label text-light fit-text">How many people are coming?</label>
+                    <input type="number" class="form-control fs-2" name="numberOfGuests" id="numberOfGuests" value="1" required>
                 </div>
                 
                 <button type="submit" class="btn btn-outline-info fit-text rounded-pill p-5 my-5">Submit</button>

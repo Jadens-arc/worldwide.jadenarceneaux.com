@@ -20,3 +20,7 @@ html {
 .dark-blue-bg {
     background-color: #002F43;
 }
+
+#rsvp-button {
+    z-index: 10000;
+}
